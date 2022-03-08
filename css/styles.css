@@ -1,0 +1,91 @@
+.big-heading {
+  color: #BBE1FA;
+  font-size: 5rem;
+}
+
+.big-headline {
+  color: #3282B8;
+  font-size: 2rem;
+}
+
+body {
+  background-color: #1B262C;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+}
+
+.carousel {
+  height: 25rem;
+}
+
+@media (max-width:600px){
+  .carousel {height: 50rem;}
+}
+
+.carousel-item {
+  padding: 2% 15%;
+
+}
+
+.container-fluid {
+  padding: 19% 5%;
+}
+
+.navbar .container-fluid {
+  padding: 0;
+}
+
+.fa-brands {
+  font-size: 6rem;
+  color: white;
+}
+
+.fa-database {
+  font-size: 6rem;
+  color: white;
+}
+
+.face-image {
+  border-radius: 100%;
+  width: 20rem;
+  filter: grayscale();
+}
+
+.navbar {
+  background-color: #1B262C50;
+  padding: 0 5%;
+}
+
+.navbar-dark .navbar-brand {
+  color: #3282B8;
+  font-size: 5rem;
+}
+
+.navbar-nav {
+  font-weight: 500;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.25rem;
+}
+
+.skill-label {
+  color: #3282B8;
+  font-size: 3rem;
+}
+
+.skills-section {
+  background-color: #0F4C75;
+}
+
+.skill-text {
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 2rem;
+}
