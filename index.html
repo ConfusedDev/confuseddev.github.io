@@ -39,7 +39,10 @@
               <a href="#skills" class="nav-link">Skills</a>
             </li>
             <li class="nav-item ms-auto">
-              <a href="" class="nav-link disabled">Empty</a>
+              <a href="#certifications" class="nav-link">Certification</a>
+            </li>
+            <li class="nav-item ms-auto">
+              <a href="#education" class="nav-link">Education</a>
             </li>
           </ul>
         </div>
@@ -53,10 +56,14 @@
           <img class="face-image" src="images/face.PNG" alt="face-img">
         </div>
         <div class="col-lg-8 text-lg-start px-4">
-          <h1 class="big-heading">Bradley Prieskorn</h1>
-          <h4 class="big-headline">Software Engineer - New Graduate - Western Governors University</h4>
-          <button type="button" class="btn btn-outline-light btn-lg mt-4" onclick="codeSample()"><i class="fa-solid fa-code"></i>&nbsp; Code Sample</button>
-          <button type="button" class="btn btn-outline-light btn-lg mt-4 ms-3" onclick="newsletter()"><i class="fa-solid fa-newspaper"></i>&nbsp; Newsletter</button>
+          <h5 class="big-heading">Bradley Prieskorn</h1>
+          <h3 class="big-headline">Software Engineer - New Graduate - Western Governors University</h4>
+          <div class="d-flex justify-content-center justify-content-lg-start my-4">
+            <div class="btn-group" role="group" aria-label="External Link Buttons">
+              <button type="button" class="btn btn-outline-light btn-lg" onclick="codeSample()"><i class="fa-solid fa-code"></i>&nbsp; Code Sample</button>
+              <button type="button" class="btn btn-outline-light btn-lg" onclick="newsletter()"><i class="fa-solid fa-newspaper"></i>&nbsp; Newsletter</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -70,9 +77,7 @@
             <div class="carousel-item active">
               <h3 class="skill-label">Java</h3>
               <p class="skill-text">Extensive experience with <strong>Java</strong> programming. Primary low-level language
-                with expansive knowledge of class design, design patterns, lambda expressions, inheritance, encapsulation, polymorphism,
-                type inference, data pipelining, and countless other concepts. Projects utilizing database persistence, JavaFX MVC architecture, localization/internationalization,
-                 and complex data structures.
+                with expansive knowledge of class design, inheritance, encapsulation, polymorphism, design patterns, lambda expressions, type inference, datastream pipelining, and countless other concepts. Projects utilizing database persistence, JavaFX MVC architecture, localization/internationalization, and complex data structures.
                </p>
             </div>
             <div class="carousel-item">
@@ -83,25 +88,21 @@
             </div>
             <div class="carousel-item">
               <h3 class="skill-label">PostgreSQL</h3>
-              <p class="skill-text">Extremely well versed in database management using declarative programming to create complex adaptive queries to transfrom
-                unorganized data stores into useful business information. Versed in the ETL process, data cleaning and transformations, analytics, joins,
-                task scheduling, stored procedures, and many other concepts.</p>
-            </div>
-            <!-- <div class="carousel-item">
-              <h3 class="skill-label">Android</h3>
-              <p class="skill-text">Very knowledgable on all things related to the development of Android applications in <strong>Android Studio</strong>. Experience designing
-                MVC apps that utilize modern principles such as fragments, room framework, intents, bundles, and many other components of responsive applications.</p>
+              <p class="skill-text">Extremely well versed in database management using declarative programming to create complex, adaptive <strong>queries</strong> and <strong>transform</strong> unorganized data stores into useful business information. Versed in the <strong>ETL</strong> process, data cleaning and transformations, <strong>analytics</strong>, joins,
+              task scheduling, <strong>stored procedures</strong>, and many other concepts.</p>
             </div>
             <div class="carousel-item">
-              <h3 class="skill-label">Android</h3>
-              <p class="skill-text">Very knowledgable on all things related to the development of Android applications in <strong>Android Studio</strong>. Experience designing
-                MVC apps that utilize modern principles such as fragments, room framework, intents, bundles, and many other components of responsive applications.</p>
+              <h3 class="skill-label">Web Development</h3>
+              <p class="skill-text">A solid grasp of fundamental html, css, and javascript with numerous certifications. Experience designing responsive layouts and satisfying user experience using strategies ranging from <strong>Bootstrap</strong> to React. Backend experience with <strong>Node.js</strong> and Express, routing in <strong>Gatsby</strong> and <strong>React</strong>, and database integration with NoSQL solutions and <strong>GraphQL</strong>.</p>
             </div>
             <div class="carousel-item">
-              <h3 class="skill-label">Android</h3>
-              <p class="skill-text">Very knowledgable on all things related to the development of Android applications in <strong>Android Studio</strong>. Experience designing
-                MVC apps that utilize modern principles such as fragments, room framework, intents, bundles, and many other components of responsive applications.</p>
-            </div> -->
+              <h3 class="skill-label">NoSQL</h3>
+              <p class="skill-text">Modern understanding of NoSQL principles, allowing seamless integration of complex collections into efficient applications. Experience building web apps that utilize <strong>MongoDB</strong> persistence in the cloud using <strong>Mongoose</strong>. Knowledgeable on distributed solutions and destructuring multifaceted documents into modular and reusable nodes.</p>
+            </div>
+            <div class="carousel-item">
+              <h3 class="skill-label">Git Bash</h3>
+              <p class="skill-text">Extraordinarily capable in command line environments with extensive experience using <strong>Linux/GNU</strong> and <strong>Hyper</strong> terminals. Comfortable synchronizing remote <strong>Github</strong> repositories with local branches using <strong>git</strong> commands, as well as utilizing git functionality to compare, modify, and rebase software versions.</p>
+            </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#skills-carousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -114,19 +115,98 @@
         </div>
       </div>
       <div class="row px-5 mt-5">
-        <div class="col-4">
+        <div class="col-3">
           <i class="fa-brands fa-java"></i>
         </div>
-        <div class="col-4">
+        <div class="col-3">
           <i class="fa-brands fa-android"></i>
         </div>
-        <div class="col-4">
+        <div class="col-3">
           <i class="fa-solid fa-database"></i>
+        </div>
+        <div class="col-3">
+          <i class="fa-brands fa-react"></i>
         </div>
       </div>
     </div>
-
   </section>
+  <!-- Certification Section -->
+  <section class="certification-section" id="certifications">
+    <div class="container-fluid">
+      <div class="row">
+        <h2 class="section-title">Licenses and Certifications</h4>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-4 px-1">
+          <div class="card">
+            <h3 class="card-title">Advanced HTML5 and CSS3</h3>
+            <img src="./images/ciw-advanced.jpg" alt="HTML and CSS3 Certificate">
+            <h5 class="card-headline">CIW Certification Partners</h5>
+            <p class="card-date"> September 10, 2019 </p>
+          </div>
+        </div>
+        <div class="col-lg-4 px-1">
+          <div class="card">
+            <h3 class="card-title">Project+</h3>
+            <img src="./images/comptia.jpg" alt="Project+">
+            <h5 class="card-headline">CompTIA</h5>
+            <p class="card-date"> December 28, 2018 </p>
+          </div>
+        </div>
+        <div class="col-lg-4 px-1">
+          <div class="card">
+            <h3 class="card-title">User Interface Design</h3>
+            <img src="./images/ciw-user-interface.jpg" alt="User Interface Certificate">
+            <h5 class="card-headline">CIW Certification Partners</h5>
+            <p class="card-date"> April 6, 2018 </p>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-4 px-1">
+          <div class="card">
+            <h3 class="card-title">Complete Web Development</h3>
+            <img class="uc" src="./images/web2022.jpg" alt="Web Certificate">
+            <h5 class="card-headline">Internet of Things Academy</h5>
+            <p class="card-date"> February 28, 2022 </p>
+          </div>
+        </div>
+        <div class="col-lg-4 px-1">
+          <div class="card">
+            <h3 class="card-title">Site Development</h3>
+            <img src="./images/ciw-site-development.jpg" alt="Site Development Certificate">
+            <h5 class="card-headline">CIW Certification Partners</h5>
+            <p class="card-date"> February 28, 2022 </p>
+          </div>
+        </div>
+        <div class="col-lg-4 px-1">
+          <div class="card">
+            <h3 class="card-title">Linux Mastery</h3>
+            <img class="uc" src="./images/linux-certification.jpg" alt="Linux Certificate">
+            <h5 class="card-headline">Internet of Things Academy</h5>
+            <p class="card-date"> February 28, 2022 </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Education Section -->
+  <section class="education-section" id="education">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-lg-8 text-lg-end px-4">
+          <h5 class="big-heading">Western Governors University</h1>
+          <h3 class="big-headline">BA, Software Development</h4>
+        </div>
+        <div class="col">
+          <img class="degree-image" src="images/wgu-logo.jpg" alt="College Degree Image">
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <h5 class="footer-text" id="footerDate"></h5>
+  </footer>
   <script src="index.js" charset="utf-8"></script>
 </body>
 
