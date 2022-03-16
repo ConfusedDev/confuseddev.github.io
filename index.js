@@ -21,5 +21,5 @@ function enhance(event){
       card.parentElement.classList.value = "col-lg-4 col-6";
     });
   }
-  event.target.scrollIntoView();
+  event.target.scrollIntoView({block:"center"});
 }
