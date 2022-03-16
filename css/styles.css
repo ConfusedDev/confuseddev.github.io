@@ -25,7 +25,7 @@ p {
 
 .card {
   background-color: #3282B8;
-  margin: 3% 0;
+  margin-top: 2%;
 }
 
 .card-date {
@@ -47,6 +47,16 @@ p {
   margin: 0;
 }
 
+@media (max-width:700px){
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-headline {
+    font-size: 1rem;
+  }
+}
+
 .carousel {
   height: 28rem;
 }
@@ -65,8 +75,14 @@ p {
 }
 
 .degree-image {
-  width: 25rem;
-  border-radius: 10%;
+  width: 20rem;
+  border-radius: 15%;
+}
+
+@media (max-width:1000px) {
+  .degree-image {
+    margin-top: 20%;
+  }
 }
 
 .education-section {
