@@ -20,11 +20,11 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#page-navbar">
   <!-- About Section -->
-  <section class="about-section">
+  <section class="about-section" id="about">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="page-navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><i class="fa-solid fa-laptop-code"></i></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,13 +33,13 @@
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
             <li class="nav-item ms-auto pe-lg-4">
-              <a href="#" class="nav-link">Home</a>
+              <a href="#about" class="nav-link">Home</a>
             </li>
             <li class="nav-item ms-auto pe-lg-4">
-              <a href="#skills-carousel" class="nav-link">Skills</a>
+              <a href="#skills" class="nav-link">Skills</a>
             </li>
             <li class="nav-item ms-auto">
-              <a href="https://github.com/ConfusedDev/code-sample" class="nav-link">Code Sample</a>
+              <a href="" class="nav-link disabled">Empty</a>
             </li>
           </ul>
         </div>
@@ -55,13 +55,14 @@
         <div class="col-lg-8 text-lg-start px-4">
           <h1 class="big-heading">Bradley Prieskorn</h1>
           <h4 class="big-headline">Software Engineer - New Graduate - Western Governors University</h4>
-          <button type="button" class="btn btn-outline-light btn-lg mt-4" onclick="newsletter()"><i class="fa-solid fa-newspaper"></i>&nbsp; Newsletter</button>
+          <button type="button" class="btn btn-outline-light btn-lg mt-4" onclick="codeSample()"><i class="fa-solid fa-code"></i>&nbsp; Code Sample</button>
+          <button type="button" class="btn btn-outline-light btn-lg mt-4 ms-3" onclick="newsletter()"><i class="fa-solid fa-newspaper"></i>&nbsp; Newsletter</button>
         </div>
       </div>
     </div>
   </section>
   <!-- Skills Section -->
-  <section class="skills-section">
+  <section class="skills-section" id="skills">
     <div class="container-fluid">
       <div class="row">
         <div id="skills-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover" data-bs-interval="10000">
