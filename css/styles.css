@@ -89,6 +89,10 @@ p {
   background-color: #0F4C75;
 }
 
+.education-section .big-headline {
+  font-size: 4rem;
+}
+
 .fa-brands, .fa-database {
   font-size: 5rem;
   color: white;
