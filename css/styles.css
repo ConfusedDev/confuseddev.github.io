@@ -12,10 +12,10 @@ body {
   background-color: #1B262C;
   text-align: center;
   position: relative;
+  font-family: "Work Sans", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Work Sans", sans-serif;
   font-weight: bold;
 }
 
@@ -117,10 +117,19 @@ p {
   filter: grayscale();
 }
 
+.form-label {
+  font-size: 2rem;
+  margin-left: 2%;
+}
+
 .footer-text {
   color: white;
   margin: 0;
   padding: .25rem 0;
+}
+
+.modal-title {
+  font-size: 3rem;
 }
 
 .navbar {
@@ -139,7 +148,6 @@ p {
 
 .navbar-nav {
   font-weight: 500;
-  font-family: "Work Sans", sans-serif;
   font-size: 1.25rem;
 }
 
