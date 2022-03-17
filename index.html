@@ -58,10 +58,35 @@
         <div class="col-lg-8 text-lg-start px-4">
           <h5 class="big-heading">Bradley Prieskorn</h1>
           <h3 class="big-headline">Software Engineer - New Graduate - Western Governors University</h4>
-          <div class="d-flex justify-content-center justify-content-lg-start my-4">
+          <div class="d-flex justify-content-center justify-content-lg-start my-5">
             <div class="btn-group" role="group" aria-label="External Link Buttons">
               <button type="button" class="btn btn-outline-light btn-lg" onclick="codeSample()"><i class="fa-solid fa-code"></i>&nbsp; Code Sample</button>
               <button type="button" class="btn btn-outline-light btn-lg" onclick="newsletter()"><i class="fa-solid fa-newspaper"></i>&nbsp; Newsletter</button>
+              <button type="button" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal"><i class="fa-solid fa-envelope"></i>&nbsp; Contact Me</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="contactLabel">Contact Me</h4>
+                <button class="btn-close mx-2" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form class="text-start" action="https://desolate-headland-57441.herokuapp.com" method="post">
+                  <label for="nameInput" class="form-label">Name</label>
+                  <input class="form-control" type="text" name="name" id="nameInput">
+                  <label for="emailInput" class="form-input">Email</label>
+                  <input class="form-control" type="email" name="email" id="emailInput">
+                  <label for="contentInput">Message</label>
+                  <textarea class="form-control" name="content" id="contentInput" cols="30" rows="10"></textarea>
+                  <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Cancel</button>
+                    <button class="btn btn-primary" type="submit">Send</button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -138,7 +163,7 @@
       </div>
       <div class="row align-items-center">
         <div class="col-lg-4 col-6">
-          <div class="card" onclick="enhance(event)">
+          <div class="card can-hover" onclick="enhance(event)">
             <h3 class="card-title">Advanced HTML5 and CSS3</h3>
             <img src="./images/ciw-advanced.jpg" alt="HTML and CSS3 Certificate">
             <h5 class="card-headline">CIW Certification Partners</h5>
@@ -146,7 +171,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-6">
-          <div class="card" onclick="enhance(event)">
+          <div class="card can-hover" onclick="enhance(event)">
             <h3 class="card-title">Project+</h3>
             <img src="./images/comptia.jpg" alt="Project+">
             <h5 class="card-headline">CompTIA</h5>
@@ -154,7 +179,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-6">
-          <div class="card" onclick="enhance(event)">
+          <div class="card can-hover" onclick="enhance(event)">
             <h3 class="card-title">User Interface Design</h3>
             <img src="./images/ciw-user-interface.jpg" alt="User Interface Certificate">
             <h5 class="card-headline">CIW Certification Partners</h5>
@@ -162,7 +187,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-6">
-          <div class="card" onclick="enhance(event)">
+          <div class="card can-hover" onclick="enhance(event)">
             <h3 class="card-title">Complete Web Development</h3>
             <img class="uc" src="./images/web2022.jpg" alt="Web Certificate">
             <h5 class="card-headline">Internet of Things Academy</h5>
@@ -170,7 +195,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-6">
-          <div class="card" onclick="enhance(event)">
+          <div class="card can-hover" onclick="enhance(event)">
             <h3 class="card-title">Site Development</h3>
             <img src="./images/ciw-site-development.jpg" alt="Site Development Certificate">
             <h5 class="card-headline">CIW Certification Partners</h5>
@@ -178,7 +203,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-6">
-          <div class="card" onclick="enhance(event)">
+          <div class="card can-hover" onclick="enhance(event)">
             <h3 class="card-title">Linux Mastery</h3>
             <img class="uc" src="./images/linux-certification.jpg" alt="Linux Certificate">
             <h5 class="card-headline">Internet of Things Academy</h5>

@@ -14,11 +14,13 @@ function enhance(event){
     const cards = document.querySelectorAll(".card");
     cards.forEach((card)=>{
       card.parentElement.classList.value = "col";
+      card.classList.value = "card";
     });
   } else {
     const cards = document.querySelectorAll(".card");
     cards.forEach((card)=>{
       card.parentElement.classList.value = "col-lg-4 col-6";
+      card.classList.value = "card can-hover"
     });
   }
   event.target.scrollIntoView({block:"center"});
