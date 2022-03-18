@@ -60,8 +60,12 @@
           <h3 class="big-headline">Software Engineer - New Graduate - Western Governors University</h4>
           <div class="d-flex justify-content-center justify-content-lg-start my-5">
             <div class="btn-group" role="group" aria-label="External Link Buttons">
-              <button type="button" class="btn btn-outline-light btn-lg" onclick="codeSample()"><i class="fa-solid fa-code"></i>&nbsp; Code Sample</button>
-              <button type="button" class="btn btn-outline-light btn-lg" onclick="newsletter()"><i class="fa-solid fa-newspaper"></i>&nbsp; Newsletter</button>
+              <a href="https://github.com/ConfusedDev/code-sample">
+                <button type="button" class="btn btn-outline-light btn-lg"><i class="fa-solid fa-code"></i>&nbsp; Code Sample</button>
+              </a>
+              <a href="https://quiet-shore-88177.herokuapp.com/">
+                <button type="button" class="btn btn-outline-light btn-lg"><i class="fa-solid fa-newspaper"></i>&nbsp; Newsletter</button>
+              </a>
               <button type="button" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal"><i class="fa-solid fa-envelope"></i>&nbsp; Contact Me</button>
             </div>
           </div>
@@ -74,16 +78,16 @@
                 <button class="btn-close mx-2" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <form class="text-start py-2" action="https://desolate-headland-57441.herokuapp.com" method="post">
+                <form action="https://desolate-headland-57441.herokuapp.com" class="text-start py-2" method="post" onsubmit="contactSubmit()">
                   <label for="nameInput" class="form-label">Name</label>
-                  <input class="form-control form-control-lg" type="text" name="name" id="nameInput">
+                  <input class="form-control form-control-lg" type="text" name="name" id="nameInput" required>
                   <label for="emailInput" class="form-label">Email</label>
-                  <input class="form-control form-control-lg" type="email" name="email" id="emailInput">
+                  <input class="form-control form-control-lg" type="email" name="email" id="emailInput" required>
                   <label for="contentInput" class="form-label">Message</label>
-                  <textarea class="form-control form-control-lg" name="content" id="contentInput" cols="30" rows="10"></textarea>
+                  <textarea class="form-control form-control-lg" name="content" id="contentInput" cols="30" rows="10" required></textarea>
                   <div class="modal-footer me-4 mt-4">
                     <button class="btn btn-lg btn-secondary me-4" data-bs-dismiss="modal" type="button">Cancel</button>
-                    <button class="btn btn-lg btn-primary" type="submit">Send</button>
+                    <button id="contactSubmitButton" class="btn btn-lg btn-primary" type="submit">Send</button>
                   </div>
                 </form>
               </div>
@@ -102,7 +106,7 @@
             <div class="carousel-item active">
               <h3 class="skill-label">Java</h3>
               <p class="skill-text">Extensive experience with <strong>Java</strong> programming. Primary low-level language
-                with expansive knowledge of class design, inheritance, encapsulation, polymorphism, design patterns, lambda expressions, type inference, datastream pipelining, and countless other concepts. Projects utilizing database persistence, JavaFX MVC architecture, localization/internationalization, and complex data structures.
+                with expansive knowledge of class design, inheritance, encapsulation, polymorphism, design patterns, lambda expressions, type inference, datastream pipelining, asynchronous operations, and many other concepts. Projects utilizing database persistence, <strong>JavaFX</strong>, localization/internationalization, <strong>MV architecture</strong>, and complex data structures.
                </p>
             </div>
             <div class="carousel-item">
