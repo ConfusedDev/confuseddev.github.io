@@ -8,10 +8,10 @@ function contactSubmit(){
 }
 
 function enhance(event){
-  if(document.querySelectorAll(".card")[0].parentElement.classList.value !== "col"){
+  if(document.querySelectorAll(".card")[0].parentElement.classList.value !== "col-12"){
     const cards = document.querySelectorAll(".card");
     cards.forEach((card)=>{
-      card.parentElement.classList.value = "col";
+      card.parentElement.classList.value = "col-12";
       card.classList.value = "card";
     });
   } else {
