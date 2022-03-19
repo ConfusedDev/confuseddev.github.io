@@ -41,10 +41,15 @@ p {
   margin-top: 2%;
 }
 
-@media(min-width:1000px) {
+@media(min-width:900px) {
   .can-hover:hover {
   transform: scale(1.1);
   z-index: 100;
+  }
+
+  .face-image:hover {
+    transform: scale(1.1);
+    border: 5px solid white;
   }
 }
 
